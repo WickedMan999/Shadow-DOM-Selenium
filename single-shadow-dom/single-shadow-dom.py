@@ -22,7 +22,7 @@ wait = WebDriverWait(driver, 10)
 
 # Open URL
 driver.get(base_url)
-driver.implicitly_wait(30)
+time.sleep(3)
 
 # Wait 10 sec for nearby 'Dom' element to be present
 wait.until(EC.presence_of_element_located(
